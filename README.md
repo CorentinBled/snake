@@ -8,4 +8,5 @@
 ## Completed Tasks
 - Added snake collision
 - Added game reset upon loss
+- Added score counter
 
