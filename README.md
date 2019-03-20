@@ -9,6 +9,3 @@
 - Added snake collision
 - Added game reset upon loss
 - Added score counter
-
-
-### This is a test
