@@ -1,4 +1,4 @@
-# snake
+# Snake
 
 ## To do
 - Fix game reset snake block overlapping
@@ -10,3 +10,5 @@
 - Added game reset upon loss
 - Added score counter
 
+
+### This is a test
