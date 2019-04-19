@@ -1,7 +1,7 @@
-# snake
+# Snake
 
 ## To do
-- Add snake collision
+- Fix game reset snake block overlapping
 - Add wall collision
 - Add highscore counter
 - Change initial food spawn to be random
@@ -12,3 +12,7 @@
 - Blocks is used for snake construction, not food or traps, change?
 - Upon trap hit, game_over. Enable game reset instead of changing block color to background
 
+## Completed Tasks
+- Added snake collision
+- Added game reset upon loss
+- Added score counter

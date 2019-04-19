@@ -8,6 +8,7 @@ function Snake() {
     this.total = 0;
     this.blocks = [];
     
+    
 
     this.update = function() {
         for(var i = this.total; i > 0; i--){
@@ -22,6 +23,8 @@ function Snake() {
 
         this.x = constrain(this.x, 0, width-scl);
         this.y = constrain(this.y, 0, height-scl);
+        this.blocks[0] = new Block(this.x, this.y);
+
     }
 
     this.dir = function(x, y) {

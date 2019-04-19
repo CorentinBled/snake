@@ -20,6 +20,11 @@ function draw() {  // must be created for p5.js
     background(51);
     
     if(game_over == false){
+        if(f.x === s.x && f.y === s.y){     // If snake collides with food, snake eats food, update food location
+            f.update();
+            s.eat();
+        }
+
         f.show();   // Display food
         for(var i = 0; i < 10; i++){
             traps[i].show();
@@ -27,6 +32,7 @@ function draw() {  // must be created for p5.js
         s.update(); // Update Snake movement
         s.show();   // Display snake
     }
+
     else{           // If game is over hide all
         f.hide();
         for(var i = 0; i < 10; i++){
@@ -35,10 +41,7 @@ function draw() {  // must be created for p5.js
         s.hide();
     }
 
-    if(f.x === s.x && f.y === s.y){     // If snake collides with food, snake eats food, update food location
-        f.update();
-        s.eat();
-    }
+    
 
     for(var i = 0; i < 10; i++){        // Check if snake has hit traps
         traps[i].show();
@@ -47,6 +50,12 @@ function draw() {  // must be created for p5.js
             game_over = true;
         }
     }
+
+    textAlign(LEFT);
+    textSize(35);
+    fill(255,50);
+    noStroke();
+    text('Score: ' + s.total, 30, 30);
 }
 
 function keyPressed() {
