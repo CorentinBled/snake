@@ -1,5 +1,8 @@
 # Snake
 
+## Click the following link to play
+- https://corbled.github.io/snake/
+
 ## To do
 - Fix game reset snake block overlapping
 - Add wall collision
