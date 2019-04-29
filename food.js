@@ -19,4 +19,6 @@ function Food() {
         fill(51);
         rect(this.x, this.y, scl, scl);
     }
+
+    
 }

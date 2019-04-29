@@ -32,22 +32,28 @@ function Snake() {
         this.yspeed = y;
     }
 
-    this.show = function() {
+    this.show = function() {        // Display snake
         for(var i = 0; i <= this.total; i++){
             fill(255);
             rect(this.blocks[i].x, this.blocks[i].y, scl, scl);
         } 
     }
 
-    this.eat = function() {
+    this.eat = function() {         // Snake eats, add block to length
         this.total++;
         this.blocks[this.total] = [new Block(0, 0)];
     }
 
-    this.hide = function() {
+    this.hide = function() {        // Hide snake
         for(var i = 0; i <= this.total; i++){
             fill(51);
             rect(this.blocks[i].x, this.blocks[i].y, scl, scl);
         }
+    }
+
+    this.reset = function() {       // Reset snake length
+        this.blocks = [];
+
+        this.blocks[0] = new Block(0, 0);
     }
 }
