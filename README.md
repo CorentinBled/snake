@@ -9,6 +9,7 @@
 - Add highscore counter (using database?)
 - Change initial food spawn to be random
 - Change initial trap spawn to be random
+- Add border around the game
 
 
 - Blocks is used for snake construction, not food or traps, change?
